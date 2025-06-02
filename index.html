@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SilverGate</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/74eb947dc8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main class="mainSection">
+        <nav>
+            <div class="container">
+                <div class="hamburger" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-list-center">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#wiki">Wiki</a></li>
+                </ul>
+                <ul class="nav-list-end">
+                    <li><a href="https://www.instagram.com/projeto_silvergate/" target="_blank"><i class="fa-brands fa-instagram iconInstagram"></i></a></li>
+                    <li><button class="btn-nav" onclick="document.getElementById('formulario').scrollIntoView({ behavior: 'smooth' });">Inscreva-se</button></li>
+                </ul>
+            </div>
+            <ul class="mobile-menu" id="mobileMenu">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#wiki">Wiki</a></li>
+            </ul>
+        </nav>
+
+        <div class="logo-wrapper">
+            <img src="./img/SilverGate.png" class="mainLogo">
+        </div>
+    </main>
+
+    <section class="sobreSection" id="sobre">
+        <h3 class="sobreDivisor">Sobre</h3>
+        <div class="container sobre-container">
+            <div class="left">
+                <img src="./img/capa.jpeg" class="capa">
+            </div>
+            <div class="right">
+                <div class="borda">
+                    <h2 class="sobreText">
+                        Após uma misteriosa nave colidir com a cidade de Silvergate, agentes do FBI são enviados para
+                        investigar seu interior. No entanto, após o desaparecimento repentino da equipe, o investigador
+                        Jason Nolan é designado para liderar uma nova missão de busca. Mas, ao adentrar a nave, sua
+                        equipe é brutalmente dizimada diante de seus olhos.<br><br>
+                        Agora, Jason se vê sozinho, preso ao objetivo de resgatar os agentes desaparecidos e descobrir
+                        o que realmente está acontecendo dentro da misteriosa nave que caiu em Silvergate.
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="wikiSection" id="wiki">
+        <h3 class="wiki-title">Wiki</h3>
+        <div class="wiki-container">
+            <div class="wiki-item">
+                <div class="wiki-image">
+                    <img src="./img/Jason.jpeg" alt="Jason Nolan">
+                </div>
+                <div class="wiki-text">
+                    <h2>Jason Nolan</h2>
+                    <p>
+                        <b>Idade:</b> 41 anos;<br>
+                        <b>Altura/Peso:</b> 177cm - 75kg;<br>
+                        <b>Profissão:</b> Equipe de investigação da polícia;<br>
+                        <b>Descrição:</b> Jason, nasceu em 1963 em Silvergate, desde pequeno possuía curiosidade em
+                        livros
+                        de
+                        investigação, o que veio a se tornar sua profissão posteriormente em 1988 quando Jason
+                        passou na
+                        prova da polícia e se tornou membro da equipe de investigação da polícia da cidade. Jason
+                        Nolan
+                        se casou com (Nome da mulher do personagem) com quem teve dois filhos (Um menino e uma
+                        menina).
+                    </p>
+                </div>
+            </div>
+
+            <div class="wiki-item reverse">
+                <div class="wiki-image">
+                    <img src="./img/Samantha.jpeg" alt="Samantha Amber">
+                </div>
+                <div class="wiki-text">
+                    <h2>Samantha Amber</h2>
+                    <p><b>Idade:</b> 37 anos;<br>
+                        <b>Altura/Peso:</b> 167cm - 60kg; <br>
+                        <b>Profissão:</b> Redatora (Jornal);<br>
+                        <b>Descrição:</b> Samantha, nasceu em 1967 em Silvergate, apaixonada na leitura e com o sonho de
+                        ser
+                        escritora, Samantha se tornou redatora do jornal da cidade após enviar diversos de seus
+                        textos
+                        para análise, mesmo após se casar com (Nome do personagem - principal) ela continuou
+                        trabalhando
+                        e só focou completamente na sua carreira como escritora quando teve seu primeiro filho,
+                        atualmente ela escreve livros na tentativa de conseguir dar o primeiro passo em sua carreira
+                        como escritora.
+                    </p>
+                </div>
+            </div>
+
+            <div class="wiki-item">
+                <div class="wiki-image">
+                    <img src="./img/Mercador.jpeg" alt="Mercador">
+                </div>
+                <div class="wiki-text">
+                    <h2>Mark Mason</h2>
+                    <p><b>Idade: 33;</b><br>
+                        <b>Altura/Peso:</b> 174cm - 79kg;<br>
+                        <b>Profissão:</b> Equipe de investigação da polícia;<br>
+                        <b>Descrição:</b> Junto do protagonista sobreviveu ao evento no início do jogo, recobrou a
+                        consciência
+                        mais cedo que o protagonista e saiu investigando a nave, coletando itens que serão dados ao
+                        jogador em alguns momentos do gameplay.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="formSection" id="formulario">
+        <h3 class="form-title">Inscreva-se</h3>
+        <form class="form-container" id="contactForm">
+            <input type="text" name="name" placeholder="Seu nome" required>
+            <input type="email" name="email" placeholder="Seu e-mail" required>
+            <button type="submit" class="btn-form">Inscreva-se</button>
+        </form>
+        <p id="formMessage"></p>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 Terminal-16. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
